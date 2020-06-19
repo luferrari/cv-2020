@@ -1,1 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Fira+Code:400,500&display=swap');
+
+:root {
+	--f_sans: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+	--f_mono: 'Fira Code', monospace;
+	--c_tone0: #212529;
+	--c_tone1: #dcdfe3;
+}
+
+body * {
+	transition: all 0.3s linear;
+	font-family: var(--f_sans);
+}
+
+html, body {
+	height: 100vh;
+	display: block;
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+.navbar-toggler {
+	font-family: var(--f_mono);
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: rgba(255,255,255,1)!important;
+	border: 0;
+}
+
+.card {
+	border: 0.125rem solid var(--c_tone0);
+	border-radius: 0;
+	box-shadow: 0.5rem 0.5rem var(--c_tone0);
+}
+
+.card:hover {
+	margin: -0.25rem 0.25rem 0.25rem -0.25rem;
+	box-shadow: 0.875rem 0.875rem var(--c_tone0);
+}
+
+.card-header {
+	border-bottom: 0.125rem solid var(--c_tone0);
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+#tab_contatti a {
+	padding: 0 0.125rem;
+	background: var(--c_tone1);
+}
+
+#tab_contatti a:hover {
+	background: var(--c_tone0);
+	color: #fff;
+	text-decoration: none;
+}
+
+#tab_contatti tr td:first-child {
+	width: 2rem;
+	text-align: center;
+}
+
+#tab_contatti tr td + td, #tab_contatti a {
+	font-family: var(--f_mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: var(--c_tone0);
+}
+
+
+
+#tab_conoscenze {
+	font-size: 0.875rem;
+}
+
+#tab_conoscenze tr td:first-child {
+	text-align: right;
+	width: 50%;	
+}
+
+#tab_conoscenze tr td + td {
+	width: 50%;
+	user-select: none;
+}
+
+
+
+
+
+/* Debug */
+/**
+@media (max-width: 575px) {
+	body * { outline: 1px solid rgba(153,0,0,0.25); background: rgba(153,0,0,.0625); } }
+@media (min-width: 576px) {
+	body * { outline: 1px solid rgba(153,153,0,0.25); background: rgba(153,153,0,.0625); } }
+@media (min-width: 768px) {
+	body * { outline: 1px solid rgba(0,153,0,0.25); background: rgba(0,153,0,.0625); } }
+@media (min-width: 992px) {
+	body * { outline: 1px solid rgba(0,153,153,0.25); background: rgba(0,153,153,.0625); } }
+@media (min-width: 1200px) {
+	body * { outline: 1px solid rgba(0,0,153,0.25); background: rgba(0,0,153,.0625); } }
+@media (min-width: 2048px) {
+	body * { outline: 1px solid rgba(153,0,153,0.25); background: rgba(153,0,153,.0625); } }
 
