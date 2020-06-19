@@ -1,19 +1,129 @@
  <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css" integrity="sha384-BHMmCeZEB8FFTwXRrSSWZJd7NXU/Hh4EawgpQO+3MDzE/GMYgbXgHb8ylJcUlBeK" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<title>Lucia Ferrari :: Curriculum Vitae</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap + jQuery -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css" integrity="sha384-BHMmCeZEB8FFTwXRrSSWZJd7NXU/Hh4EawgpQO+3MDzE/GMYgbXgHb8ylJcUlBeK" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/e40e5d1451.js" integrity="sha384-eoEIP4kL867FWM1D0Gem6jxjxMlsD5jiBy1lo9hB45B9e6PLQZ96UxgVowiBgMxx" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
+<nav class="navbar navbar-dark bg-secondary">
+	<div class="container">
+		<a class="navbar-brand" href="#">Lucia Ferrari</a>
+		<span class="navbar-toggler">Curriculum Vitae 2020 (WIP)</span>
+	</button>
+	</div>
+</nav>
+
+<div class="container my-md-3">
+	<div class="row py-md-3">
+		<div class="col col-md-4 px-md-3 no-gutters">
+
+			<div class="card">
+				<div class="card-header bg-white">
+					Contatti
+				</div>
+				<div class="card-body bg-white">
+					<div class="card-text">
+						<table id="tab_contatti">
+							<tbody>
+								<tr>	<!-- Cellulare -->
+									<td>
+										<i class="fas fa-mobile" aria-label="Phone"></i>
+									</td>
+									<td>
+										…
+									</td>
+								</tr>
+								<tr>	<!-- Email Polimi -->
+									<td>
+										<i class="fas fa-envelope" aria-label="Email Polimi"></i>
+									</td>
+									<td>
+										…
+									</td>
+								</tr>
+								<tr>	<!-- GitHub -->
+									<td>
+										<i class="fab fa-github" aria-label="GitHub"></i>
+									</td>
+									<td>
+										<a href="#" target="_blank">…</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="card mt-4">
+				<div class="card-header bg-white">
+					Conoscenze
+				</div>
+				<div class="card-body bg-white">
+					<div class="card-text">
+						<table id="tab_conoscenze" class="w-100">
+							<tbody>
+								<tr aria-label="2/5">
+									<td class="pr-md-2">
+										…
+									</td>
+									<td>
+										<i class="fas fa-circle"></i>
+										<i class="fas fa-circle"></i>
+										<i class="far fa-circle"></i>
+										<i class="far fa-circle"></i>
+										<i class="far fa-circle"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="pr-md-2">
+										…
+									</td>
+									<td aria-label="3/5">
+										<i class="fas fa-circle"></i>
+										<i class="fas fa-circle"></i>
+										<i class="fas fa-circle"></i>
+										<i class="far fa-circle"></i>
+										<i class="far fa-circle"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="row px-md-3">
+				<div class="col-md-6 pr-md-3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+				<div class="col-md-6 pl-md-3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
+<footer class="page-footer text-light bg-secondary">
+	<div class="container py-md-3">
+		&nbsp;
+	</div>
+</footer>
+
 </body>
-</html> 
+</html>
