@@ -85,19 +85,36 @@ body {
 }
 
 
-#_conoscenze tr td:first-child {
+#_conoscenze table {
+	margin-bottom: 0.125rem;
+	width: 100%;
+}
+#_conoscenze table:last-child {
+	margin-bottom: 0;
+}
+#_conoscenze thead tr td {
+	border-bottom: 0.063rem solid var(--tone0);
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-align: left;
+}
+#_conoscenze tbody tr td {
+	line-height: 1.025rem;
+}
+#_conoscenze tbody tr:first-child td {
+	padding-top: 0.25rem;
+}
+#_conoscenze tbody tr td:first-child {
+	font-size: 0.75rem;
 	font-weight: 500;
 	text-align: right;
 	width: 50%;
 }
-#_conoscenze tr td + td {
+#_conoscenze tbody tr td + td {
 	font-family: sans-serif;
+	text-align: left;
 	user-select: none;
 	width: 50%;
-}
-#_conoscenze thead tr td {
-	border-bottom: 0.0625rem solid var(--tone0);
-	font-weight: 700!important;
 }
 
 
