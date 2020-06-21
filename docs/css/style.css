@@ -67,6 +67,25 @@ body {
 	}
 }
 
+._lang {
+	cursor: default;
+}
+._lang > a {
+	color: rgb(var(--teal))!important;
+	font-weight: 300;
+	text-decoration: none;
+}
+._lang > a:hover {
+	cursor: pointer;
+	font-weight: 700;
+}
+._lang > a:first-child {
+	margin-right: 0.25rem;
+}
+._lang > a:last-child {
+	margin-left: 0.25rem;
+}
+
 .container.h-100 {
 	margin-top: 5rem;
 }
@@ -103,55 +122,54 @@ body {
 
 
 
-#__education:hover .card-header {
+#_edu:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#__education .__span:nth-child(odd) {
+#_edu ._span:nth-child(odd) {
 	float: left;
 	padding: 0.5rem 0;
 	text-align: left;
 }
-#__education .__span:nth-child(even) {
+#_edu ._span:nth-child(even) {
 	float: right;
 	padding: 0.5rem 0;
 	text-align: right;
 }
-#__education .__span:first-child {
+#_edu ._span:first-child {
 	padding-top: 0;
 }
-#__education .__span:last-child {
+#_edu ._span:last-child {
 	padding-bottom: 0;
 }
-#__education .__span h3 {
-	color: var(--green);
+#_edu ._span h3 {
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#__education .__span h3 {
+#_edu ._span h3 {
 	color: rgb(var(--black));
 	font-size: 0.9rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#__education .__span h3 strong {
+#_edu ._span h3 strong {
 	font-size: 0.9rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-#__education:hover .__span h3 strong {
+#_edu:hover ._span h3 strong {
 	color: rgb(var(--teal));
 }
-#__education .__span h4 {
+#_edu ._span h4 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#__education .__span h5 {
+#_edu ._span h5 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#__education .__span h6 {
+#_edu ._span h6 {
 	border-top: 2px dotted rgb(var(--black));
 	font-size: 0.8rem;
 	font-weight: 700;
@@ -161,23 +179,23 @@ body {
 
 
 
-#__skills:hover .card-header {
+#_skls:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#__skills table {
+#_skls table {
 	width: 100%;
 }
-#__skills tr td {
+#_skls tr td {
 	width: 30%;
 }
-#__skills tr td + td {
+#_skls tr td + td {
 	font-size: 0.8rem;
 	font-weight: 500;
 	text-align: left;
 	width: 70%;
 }
-#__skills .progress {
+#_skls .progress {
 	background: #fff;
 	border-radius: 0;
 	float: left;
@@ -185,44 +203,39 @@ body {
 	outline: 1.5px solid rgb(var(--black));
 	width: 90%;
 }
-#__skills .progress .progress-bar {
+#_skls .progress .progress-bar {
 	background-color: rgb(var(--teal));
 	outline: 0.875px solid rgb(var(--black));
 }
-#__skills .small {
+#_skls .small {
 	font-weight: 500;
 }
 
 
-@media (min-width: 992px) {
-	.col-lg-12.order-3.mt-lg-3 {
-		margin-top: calc(1rem + 1px)!important;
-	}
-}
 
-#__contact:hover .card-header {
+#_cont:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#__contact tr td + td, #__contact a {
+#_cont tr td + td, #_cont a {
 	font-weight: 500;
 	color: rgb(var(--black));
 }
-#__contact tr td:first-child {
+#_cont tr td:first-child {
 	min-width: 1.5rem;
 	text-align: center;
 }
-#__contact tr td + td {
+#_cont tr td + td {
 	text-align: left;
 }
-#__contact a {
+#_cont a {
 	border-bottom: 2px solid rgb(var(--teal));
 	color: rgb(var(--black));
 	padding: 2px 2px 0 2px;
 	text-decoration: none;
 
 }
-#__contact a:hover {
+#_cont a:hover {
 	background: rgb(var(--teal));
 	color: #fff;
 	text-decoration: none;
@@ -230,55 +243,62 @@ body {
 
 
 
-#__work:hover .card-header {
+#_ints:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#__work .__span:nth-child(odd) {
+
+
+
+#_work:hover .card-header {
+	background-color: rgb(var(--teal));
+	color: #fff;
+}
+#_work ._span:nth-child(odd) {
 	float: left;
 	padding: 0.5rem 0;
 	text-align: left;
 }
-#__work .__span:nth-child(even) {
+#_work ._span:nth-child(even) {
 	float: right;
 	padding: 0.5rem 0;
 	text-align: right;
 }
-#__work .__span:first-child {
+#_work ._span:first-child {
 	padding-top: 0;
 }
-#__work .__span:last-child {
+#_work ._span:last-child {
 	padding-bottom: 0;
 }
-#__work .__span h3 {
+#_work ._span h3 {
 	color: var(--green);
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#__work .__span h3 {
+#_work ._span h3 {
 	color: rgb(var(--black));
 	font-size: 0.9rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#__work .__span h3 strong {
+#_work ._span h3 strong {
 	font-size: 0.9rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-#__work:hover .__span h3 strong {
+#_work:hover ._span h3 strong {
 	color: rgb(var(--teal));
 }
-#__work .__span h4 {
+#_work ._span h4 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#__work .__span h5 {
+#_work ._span h5 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#__work .__span h6 {
+#_work ._span h6 {
 	border-top: 2px dotted rgb(var(--black));
 	font-size: 0.8rem;
 	font-weight: 700;

@@ -10,10 +10,12 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" href="./css/style.css">
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/e40e5d1451.js" integrity="sha384-eoEIP4kL867FWM1D0Gem6jxjxMlsD5jiBy1lo9hB45B9e6PLQZ96UxgVowiBgMxx" crossorigin="anonymous"></script>
+
+	<!-- Customs -->
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/lang.js"></script>
 
 </head>
 <body>
@@ -21,55 +23,65 @@
 <nav class="navbar navbar-light bg-white fixed-top">
 	<div class="container">
 		<a class="navbar-brand" href="#">Lucia Maria Emilia Ferrari</a>
-		<span class="navbar-toggler d-block d-md-none">CV 2020</span>
-		<span class="navbar-toggler d-none d-md-block">Curriculum Vitae 2020</span>
+		<span class="navbar-toggler d-block d-md-none">
+			CV 2020
+				<span class="_lang">
+					<a onClick="it()" value="Lingua">it</a>&Colon;<a onClick="en()" value="Language">en</a>
+				</span>
+		</span>
+		<span class="navbar-toggler d-none d-md-block">
+			Curriculum Vitae 2020
+				<span class="_lang">
+					<a onClick="it()" value="Lingua">it</a>&Colon;<a onClick="en()" value="Language">en</a>
+				</span>
+			</span>
 	</div>
 </nav>
 
 <div class="container h-100">
 	<div class="row">
-		<!-- Istruzione -->
+		<!-- Education -->
 		<div class="col-sm-8 col-lg-5 offset-sm-2 offset-lg-1 order-1">
 			<div class="container p-0">
 				<div class="row no-gutters">
-					<div class="card" id="__education">
-						<div class="card-header">
+					<div class="card" id="_edu">
+						<div class="card-header" name="__edu-header">
 							<i class="fas fa-sm fa-graduation-cap"></i> Istruzione
 						</div>
 						<div class="card-body">
-							<div class="w-100 d-block __span">
-								<h3>
+							<div class="w-100 d-block _span">
+								<h3 name="__edu-01-h3">
 									<strong>Laurea Magistrale</strong> in <strong>Design della Comunicazione</strong> presso <strong>Politecnico di Milano</strong>
 								</h3>
 								<h4>
 									<em>tba…</em>
 								</h4>
-								<h6>dal 2018 ad oggi</h6>
+								<h6 name="__edu-01-h6">dal 2018 ad oggi</h6>
 							</div>
 
-							<div class="w-100 d-block __span">
-								<h3>
+							<div class="w-100 d-block _span">
+								<h3 name="__edu-02-h3">
 									<strong>Laurea di Primo Livello</strong> in <strong>Design della Comunicazione</strong> presso <strong>Politecnico di Milano</strong>
 								</h3>
-								<h4>
+								<h4 name="__edu-02-h4">
 									<em>Pitybear. Ascolta, partecipa, immedesimati</em>
 								</h4>
 								<h5>
 									101/110
 								</h5>
-								<h6>12 settembre 2018</h6>
+								<h6 name="__edu-02-h6">12 settembre 2018</h6>
 							</div>
 
-							<div class="w-100 d-block __span">
-								<h3>
-									<strong>Corso di formazione</strong> in <strong>Type Design</strong> presso <strong>CFP Bauer</strong> (Milano, Italia)
+							<div class="w-100 d-block _span">
+								<h3 name="__edu-03-h3">
+									<strong>Corso di formazione</strong> in <strong>Type Design</strong> presso <strong>CFP Bauer</strong> (Milano)
 								</h3>
-								<h6>marzo&ndash;aprile 2015</h6>
+								<h6 name="__edu-03-h6">marzo&ndash;aprile 2015</h6>
 							</div>
 
-							<div class="w-100 d-block __span">
-								<h3>
-									<strong>Diploma</strong> presso <strong>Liceo Artistico U. Boccioni</strong> (Milano, Italia)
+							<div class="w-100 d-block _span">
+								<h3 name="__edu-04-h3">
+									<strong>Diploma</strong> presso <strong>Liceo Artistico U. Boccioni</strong> (Milano)
 								</h3>
 								<h5>
 									94/100
@@ -82,13 +94,13 @@
 			</div>
 		</div>
 
-		<div class="col-sm-8 col-lg-5 offset-sm-2 offset-lg-0 mt-4 order-2">
+		<div class="col-sm-8 col-lg-5 offset-sm-2 offset-lg-0 mt-4 mt-lg-0 order-2">
 			<div class="container p-0">
 				<div class="row no-gutters">
-				<!-- Conoscenze -->
+				<!-- Skills -->
 					<div class="col-lg-12 order-2">
-						<div class="card" id="__skills">
-							<div class="card-header">
+						<div class="card" id="_skls">
+							<div class="card-header" name="__skls-header">
 								<i class="fas fa-sm fa-lightbulb"></i> Conoscenze
 							</div>
 							<div class="card-body">
@@ -102,7 +114,7 @@
 															<div class="progress-bar" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 														</div>
 													</td>
-													<td>
+													<td name="__skls-01-td">
 														Italiano<span class="small"> &Colon; madrelingua</span>
 													</td>
 												</tr>
@@ -112,7 +124,7 @@
 															<div class="progress-bar" style="width: 97.47474747%" role="progressbar" aria-valuenow="965" aria-valuemin="0" aria-valuemax="990"></div>
 														</div>
 													</td>
-													<td>
+													<td name="__skls-02-td">
 														Inglese<span class="small"> &Colon; TOEIC C1</span>
 													</td>
 												</tr>
@@ -233,10 +245,10 @@
 						</div>
 					</div>
 
-				<!-- Contatti -->
+				<!-- Contact -->
 					<div class="col-lg-12 mt-4 mt-lg-3 order-3">
-						<div class="card" id="__contact">
-							<div class="card-header">
+						<div class="card" id="_cont">
+							<div class="card-header" name="__cont-header">
 								<i class="fas fa-sm fa-user"></i> Contatti
 							</div>
 							<div class="card-body">
@@ -290,13 +302,28 @@
 	</div>
 
 	<div class="row">
-		<div class="col-sm-8 col-lg-10 offset-sm-2 offset-lg-1 mb-5 mb-lg-4 mt-4 order-4">
-			<div class="card" id="__work">
-				<div class="card-header">
+	<!-- Interests -->
+		<div class="col-sm-8 col-lg-5 offset-sm-2 offset-lg-1 mb-5 mb-lg-4 mt-4 order-4">
+			<div class="card" id="_ints">
+				<div class="card-header" name="__ints-header">
+					<i class="fas fa-sm fa-star"></i> Interessi
+				</div>
+				<div class="card-body">
+					<div class="w-100 d-block _span">
+						tba…
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Work experience -->
+		<div class="col-sm-8 col-lg-5 offset-sm-2 offset-lg-0 mb-5 mb-lg-4 mt-4 order-4">
+			<div class="card" id="_work">
+				<div class="card-header" name="__work-header">
 					<i class="fas fa-sm fa-briefcase"></i> Esperienze lavorative
 				</div>
 				<div class="card-body">
-					<div class="w-100 d-block __span">
+					<div class="w-100 d-block _span">
 						<h3>
 							<strong>tba…</strong>
 						</h3>
