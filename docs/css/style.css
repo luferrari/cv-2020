@@ -22,9 +22,12 @@
 }
 
 
-body * {
+body :not(i) {
 	font-family: var(--mono);
 	font-size: 0.9rem;
+	transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
 }
 
 body {
@@ -42,13 +45,26 @@ body {
 }
 
 .navbar-brand {
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 
 .navbar-toggler {
 	border: 0;
 	color: rgba(var(--black),1)!important;
+	font-size: 1.25rem;
 	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+@media (max-width: 575px) {
+	.navbar-brand {
+		font-size: 1.05rem;
+	}
+
+	.navbar-toggler {
+		font-size: 0.9rem;
+	}
 }
 
 .container.h-100 {
@@ -63,9 +79,6 @@ body {
 	border: 2px solid rgb(var(--black));
 	border-radius: 0;
 	box-shadow: 0.5rem 0.5rem rgb(var(--black));
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
 
 .card-header {
@@ -76,84 +89,69 @@ body {
 	font-size: 1.25rem;
 	letter-spacing: 0.0325rem;
 	text-transform: uppercase;
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
 
 .card:hover {
 	margin: -0.325rem 0.325rem 0.325rem -0.325rem;
 	box-shadow: 0.75rem 0.75rem rgb(var(--black));
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
 
 .card:hover .card-header {
 	background-color: rgb(var(--tone2));
 	color: #fff;
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
 
 
 
-#_istruzione:hover .card-header {
+#__education:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_istruzione ._periodo:nth-child(odd) {
+#__education .__span:nth-child(odd) {
 	float: left;
 	padding: 0.5rem 0;
 	text-align: left;
 }
-#_istruzione ._periodo:nth-child(even) {
+#__education .__span:nth-child(even) {
 	float: right;
 	padding: 0.5rem 0;
 	text-align: right;
 }
-#_istruzione ._periodo:first-child {
+#__education .__span:first-child {
 	padding-top: 0;
 }
-#_istruzione ._periodo:last-child {
+#__education .__span:last-child {
 	padding-bottom: 0;
 }
-#_istruzione ._periodo h3 {
+#__education .__span h3 {
 	color: var(--green);
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#_istruzione ._periodo h3 {
+#__education .__span h3 {
 	color: rgb(var(--black));
 	font-size: 0.9rem;
 	font-weight: 400;
 	margin-bottom: 0.25rem;
 }
-#_istruzione ._periodo h3 strong {
+#__education .__span h3 strong {
 	font-size: 0.9rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
-#_istruzione:hover ._periodo h3 strong {
+#__education:hover .__span h3 strong {
 	color: rgb(var(--teal));
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 }
-#_istruzione ._periodo h4 {
+#__education .__span h4 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#_istruzione ._periodo h5 {
+#__education .__span h5 {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-#_istruzione ._periodo h6 {
+#__education .__span h6 {
 	border-top: 2px dotted rgb(var(--black));
 	font-size: 0.8rem;
 	font-weight: 700;
@@ -163,77 +161,129 @@ body {
 
 
 
-#_conoscenze:hover .card-header {
+#__skills:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_conoscenze table {
+#__skills table {
 	width: 100%;
 }
-#_conoscenze tr td {
+#__skills tr td {
 	width: 30%;
 }
-#_conoscenze tr td + td {
+#__skills tr td + td {
 	font-size: 0.8rem;
 	font-weight: 500;
 	text-align: left;
 	width: 70%;
 }
-#_conoscenze .progress {
+#__skills .progress {
 	background: #fff;
 	border-radius: 0;
 	float: left;
 	height: 0.25rem;
 	outline: 1.5px solid rgb(var(--black));
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
 	width: 90%;
 }
-#_conoscenze .progress .progress-bar {
+#__skills .progress .progress-bar {
 	background-color: rgb(var(--teal));
-	outline: 1px solid rgb(var(--black));
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
+	outline: 0.875px solid rgb(var(--black));
 }
-#_conoscenze .small {
+#__skills .small {
 	font-weight: 500;
 }
 
 
+@media (min-width: 992px) {
+	.col-lg-12.order-3.mt-lg-3 {
+		margin-top: calc(1rem + 1px)!important;
+	}
+}
 
-#_contatti:hover .card-header {
+#__contact:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_contatti tr td + td, #_contatti a {
+#__contact tr td + td, #__contact a {
 	font-weight: 500;
 	color: rgb(var(--black));
 }
-#_contatti tr td:first-child {
+#__contact tr td:first-child {
 	min-width: 1.5rem;
 	text-align: center;
 }
-#_contatti tr td + td {
+#__contact tr td + td {
 	text-align: left;
 }
-#_contatti a {
+#__contact a {
 	border-bottom: 2px solid rgb(var(--teal));
 	color: rgb(var(--black));
 	padding: 2px 2px 0 2px;
 	text-decoration: none;
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
+
 }
-#_contatti a:hover {
+#__contact a:hover {
 	background: rgb(var(--teal));
 	color: #fff;
 	text-decoration: none;
-	transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
+}
+
+
+
+#__work:hover .card-header {
+	background-color: rgb(var(--teal));
+	color: #fff;
+}
+#__work .__span:nth-child(odd) {
+	float: left;
+	padding: 0.5rem 0;
+	text-align: left;
+}
+#__work .__span:nth-child(even) {
+	float: right;
+	padding: 0.5rem 0;
+	text-align: right;
+}
+#__work .__span:first-child {
+	padding-top: 0;
+}
+#__work .__span:last-child {
+	padding-bottom: 0;
+}
+#__work .__span h3 {
+	color: var(--green);
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 0.25rem;
+}
+#__work .__span h3 {
+	color: rgb(var(--black));
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-bottom: 0.25rem;
+}
+#__work .__span h3 strong {
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#__work:hover .__span h3 strong {
+	color: rgb(var(--teal));
+}
+#__work .__span h4 {
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+#__work .__span h5 {
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+#__work .__span h6 {
+	border-top: 2px dotted rgb(var(--black));
+	font-size: 0.8rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding-top: 0.25rem;
 }
 
 
@@ -249,6 +299,3 @@ body {
 	body * { outline: 1px solid rgba(0,153,153,0.25); background: rgba(0,153,153,.0625); } }
 @media (min-width: 1200px) {
 	body * { outline: 1px solid rgba(0,0,153,0.25); background: rgba(0,0,153,.0625); } }
-@media (min-width: 2048px) {
-	body * { outline: 1px solid rgba(153,0,153,0.25); background: rgba(153,0,153,.0625); } }
-
