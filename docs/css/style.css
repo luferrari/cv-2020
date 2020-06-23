@@ -107,7 +107,7 @@ hr {
 }
 
 .card-header {
-	background: #fff;
+	background: rgb(var(--white));
 	border-bottom: 2px solid rgb(var(--black));
 	border-radius: 0!important;
 	font-weight: 700;
@@ -118,7 +118,7 @@ hr {
 
 .card:hover .card-header {
 	background-color: rgb(var(--tone2));
-	color: #fff;
+	color: rgb(var(--white));
 }
 
 .collapse .card, .collapsing .card, .collapse.show .card {
@@ -182,14 +182,14 @@ hr {
 
 #_edu:hover .card-header {
 	background-color: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 }
 
 
 
 #_skills:hover .card-header {
 	background-color: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 }
 #_skills table {
 	width: 100%;
@@ -204,7 +204,7 @@ hr {
 	width: 70%;
 }
 #_skills .progress {
-	background: #fff;
+	background: rgb(var(--white));
 	border-radius: 0;
 	float: left;
 	height: 0.25rem;
@@ -223,7 +223,7 @@ hr {
 
 #_contact:hover .card-header {
 	background-color: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 }
 #_contact tr td + td, #_contact a {
 	font-weight: 500;
@@ -245,7 +245,7 @@ hr {
 }
 #_contact a:hover {
 	background: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 	text-decoration: none;
 }
 
@@ -253,14 +253,14 @@ hr {
 
 #_interests:hover .card-header {
 	background-color: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 }
 
 
 
 #_work:hover .card-header {
 	background-color: rgb(var(--teal));
-	color: #fff;
+	color: rgb(var(--white));
 }
 
 
