@@ -90,6 +90,11 @@ body {
 	margin-top: 5rem;
 }
 
+hr {
+	border-top: 1px solid rgb(var(--black));
+	margin: 0.5rem 0;
+}
+
 
 
 /* Cards */
@@ -98,6 +103,7 @@ body {
 	border: 2px solid rgb(var(--black));
 	border-radius: 0;
 	box-shadow: 0.5rem 0.5rem rgb(var(--black));
+	width: 100%;
 }
 
 .card-header {
@@ -110,14 +116,66 @@ body {
 	text-transform: uppercase;
 }
 
-.card:hover {
-	margin: -0.325rem 0.325rem 0.325rem -0.325rem;
-	box-shadow: 0.75rem 0.75rem rgb(var(--black));
-}
-
 .card:hover .card-header {
 	background-color: rgb(var(--tone2));
 	color: #fff;
+}
+
+.collapse .card, .collapsing .card, .collapse.show .card {
+	background-color: rgba(var(--teal), 0.25);
+	border-width: 1px;
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+	padding: 0.5rem;
+	box-shadow: none;
+}
+
+
+
+._entry {
+	display: block;
+	width: 100%;
+}
+._entry:first-child {
+	padding-top: 0;
+}
+._entry:last-child {
+	padding-bottom: 0;
+}
+._entry h3 {
+	color: rgb(var(--black));
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-bottom: 0.25rem;
+}
+._entry h3 strong {
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+._entry h4 {
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+._entry h5 {
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+._entry .fa-info-circle {
+	color: rgb(var(--teal));
+	text-decoration: none;
+}
+._entry .fa-info-circle:hover {
+	cursor: pointer;
+}
+._entry small {
+	color: rgb(var(--teal));
+	display: block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin: 0 0 0 0;
+	text-align: right;
 }
 
 
@@ -126,76 +184,26 @@ body {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_edu ._span:nth-child(odd) {
-	float: left;
-	padding: 0.5rem 0;
-	text-align: left;
-}
-#_edu ._span:nth-child(even) {
-	float: right;
-	padding: 0.5rem 0;
-	text-align: right;
-}
-#_edu ._span:first-child {
-	padding-top: 0;
-}
-#_edu ._span:last-child {
-	padding-bottom: 0;
-}
-#_edu ._span h3 {
-	font-size: 1rem;
-	font-weight: 400;
-	margin-bottom: 0.25rem;
-}
-#_edu ._span h3 {
-	color: rgb(var(--black));
-	font-size: 0.9rem;
-	font-weight: 400;
-	margin-bottom: 0.25rem;
-}
-#_edu ._span h3 strong {
-	font-size: 0.9rem;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-#_edu:hover ._span h3 strong {
-	color: rgb(var(--teal));
-}
-#_edu ._span h4 {
-	font-size: 0.8rem;
-	margin-bottom: 0.25rem;
-}
-#_edu ._span h5 {
-	font-size: 0.8rem;
-	margin-bottom: 0.25rem;
-}
-#_edu ._span h6 {
-	border-top: 2px dotted rgb(var(--black));
-	font-size: 0.8rem;
-	font-weight: 700;
-	margin-bottom: 0;
-	padding-top: 0.25rem;
-}
 
 
 
-#_skls:hover .card-header {
+#_skills:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_skls table {
+#_skills table {
 	width: 100%;
 }
-#_skls tr td {
+#_skills tr td {
 	width: 30%;
 }
-#_skls tr td + td {
+#_skills tr td + td {
 	font-size: 0.8rem;
 	font-weight: 500;
 	text-align: left;
 	width: 70%;
 }
-#_skls .progress {
+#_skills .progress {
 	background: #fff;
 	border-radius: 0;
 	float: left;
@@ -203,39 +211,39 @@ body {
 	outline: 1.5px solid rgb(var(--black));
 	width: 90%;
 }
-#_skls .progress .progress-bar {
+#_skills .progress .progress-bar {
 	background-color: rgb(var(--teal));
 	outline: 0.875px solid rgb(var(--black));
 }
-#_skls .small {
+#_skills .small {
 	font-weight: 500;
 }
 
 
 
-#_cont:hover .card-header {
+#_contact:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
-#_cont tr td + td, #_cont a {
+#_contact tr td + td, #_contact a {
 	font-weight: 500;
 	color: rgb(var(--black));
 }
-#_cont tr td:first-child {
+#_contact tr td:first-child {
 	min-width: 1.5rem;
 	text-align: center;
 }
-#_cont tr td + td {
+#_contact tr td + td {
 	text-align: left;
 }
-#_cont a {
+#_contact a {
 	border-bottom: 2px solid rgb(var(--teal));
 	color: rgb(var(--black));
 	padding: 2px 2px 0 2px;
 	text-decoration: none;
 
 }
-#_cont a:hover {
+#_contact a:hover {
 	background: rgb(var(--teal));
 	color: #fff;
 	text-decoration: none;
@@ -243,7 +251,7 @@ body {
 
 
 
-#_ints:hover .card-header {
+#_interests:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
 }
@@ -253,57 +261,6 @@ body {
 #_work:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: #fff;
-}
-#_work ._span:nth-child(odd) {
-	float: left;
-	padding: 0.5rem 0;
-	text-align: left;
-}
-#_work ._span:nth-child(even) {
-	float: right;
-	padding: 0.5rem 0;
-	text-align: right;
-}
-#_work ._span:first-child {
-	padding-top: 0;
-}
-#_work ._span:last-child {
-	padding-bottom: 0;
-}
-#_work ._span h3 {
-	color: var(--green);
-	font-size: 1rem;
-	font-weight: 400;
-	margin-bottom: 0.25rem;
-}
-#_work ._span h3 {
-	color: rgb(var(--black));
-	font-size: 0.9rem;
-	font-weight: 400;
-	margin-bottom: 0.25rem;
-}
-#_work ._span h3 strong {
-	font-size: 0.9rem;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-#_work:hover ._span h3 strong {
-	color: rgb(var(--teal));
-}
-#_work ._span h4 {
-	font-size: 0.8rem;
-	margin-bottom: 0.25rem;
-}
-#_work ._span h5 {
-	font-size: 0.8rem;
-	margin-bottom: 0.25rem;
-}
-#_work ._span h6 {
-	border-top: 2px dotted rgb(var(--black));
-	font-size: 0.8rem;
-	font-weight: 700;
-	margin-bottom: 0;
-	padding-top: 0.25rem;
 }
 
 
