@@ -3,20 +3,21 @@
 :root {
 	/* Bootstrap converted colors */
 	--blue: 0, 123, 255;
-  --indigo: 102, 16, 242;
-  --purple: 111, 66, 193;
-  --pink: 232, 62, 140;
-  --red: 220, 53, 69;
-  --orange: 253, 126, 20;
-  --yellow: 255, 193, 7;
-  --green: 40, 167, 69;
-  --teal: 32, 201, 151;
-  --cyan: 23, 162, 184;
-  --white: 255, 255, 255;
-  --gray: 108, 117, 125;
-  --dark: 52, 58, 64;
-  --light: 248, 249, 250;
-  /* Personal variables */
+	--indigo: 102, 16, 242;
+	--purple: 111, 66, 193;
+	--pink: 232, 62, 140;
+	--red: 220, 53, 69;
+	--orange: 253, 126, 20;
+	--yellow: 255, 193, 7;
+	--green: 40, 167, 69;
+	--teal: 32, 201, 151;
+	--cyan: 23, 162, 184;
+	--white: 255, 255, 255;
+	--gray: 108, 117, 125;
+	--dark: 52, 58, 64;
+	--light: 248, 249, 250;
+
+	/* Personal variables */
 	--mono: 'Inconsolata', 'Courier New', 'Courier', monospace;
 	--black: 33, 37, 41;
 }
@@ -91,7 +92,7 @@ body {
 }
 
 hr {
-	border-top: 1px solid rgb(var(--black));
+	border-top: 2px solid rgb(var(--black));
 	margin: 0.5rem 0;
 }
 
@@ -143,6 +144,14 @@ hr {
 ._entry:last-child {
 	padding-bottom: 0;
 }
+._entry small {
+	color: rgb(var(--teal));
+	display: block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin: 0 0 0 0;
+	text-align: right;
+}
 ._entry h3 {
 	color: rgb(var(--black));
 	font-size: 0.9rem;
@@ -158,24 +167,20 @@ hr {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-._entry h5 {
+._entry h4 div {
+	display: block;
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-._entry .fa-info-circle {
+._entry .fas {
 	color: rgb(var(--teal));
 	text-decoration: none;
 }
-._entry .fa-info-circle:hover {
+._entry .fas:hover {
 	cursor: pointer;
 }
-._entry small {
-	color: rgb(var(--teal));
-	display: block;
-	font-size: 0.7rem;
-	font-weight: 600;
-	margin: 0 0 0 0;
-	text-align: right;
+._entry .fas span {
+	font-size: 0.8rem;
 }
 
 
@@ -251,7 +256,7 @@ hr {
 
 
 
-#_interests:hover .card-header {
+#_about:hover .card-header {
 	background-color: rgb(var(--teal));
 	color: rgb(var(--white));
 }
