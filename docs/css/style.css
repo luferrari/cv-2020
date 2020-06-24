@@ -172,14 +172,14 @@ hr {
 	font-size: 0.8rem;
 	margin-bottom: 0.25rem;
 }
-._entry .fas {
+._entry .fa-plus-circle {
 	color: rgb(var(--teal));
 	text-decoration: none;
 }
-._entry .fas:hover {
+._entry .fa-plus-circle:hover {
 	cursor: pointer;
 }
-._entry .fas span {
+._entry .fa-plus-circle span {
 	font-size: 0.8rem;
 }
 
@@ -196,17 +196,8 @@ hr {
 	background-color: rgb(var(--teal));
 	color: rgb(var(--white));
 }
-#_skills table {
-	width: 100%;
-}
-#_skills tr td {
-	width: 30%;
-}
-#_skills tr td + td {
+#_skills .card-body .row [class*="col-"] {
 	font-size: 0.8rem;
-	font-weight: 500;
-	text-align: left;
-	width: 70%;
 }
 #_skills .progress {
 	background: rgb(var(--white));
@@ -214,14 +205,29 @@ hr {
 	float: left;
 	height: 0.25rem;
 	outline: 1.5px solid rgb(var(--black));
-	width: 90%;
+	margin-left: 0.5rem;
+	width: 70%;
 }
 #_skills .progress .progress-bar {
 	background-color: rgb(var(--teal));
 	outline: 0.875px solid rgb(var(--black));
 }
 #_skills .small {
+	font-size: 0.6rem;
+	font-weight: 600;
+}
+#_skills .col-3[name*="__skills-"] .badge {
+	background: rgb(var(--white));
+	border: 1.25px solid rgb(var(--black));
+	color: rgb(var(--black));
 	font-weight: 500;
+	margin: 0.125rem 0.5rem 0 0;
+	width: 61.25%;
+	cursor: default;
+}
+#_skills .col-3[name*="__skills-"] .badge:hover {
+	background: rgb(var(--teal));
+	color: rgb(var(--white));
 }
 
 
