@@ -25,7 +25,7 @@ var it = function(){
 	$('[name="__about-header"').html('<i class="fas fa-sm fa-user"></i> Su di me');
 		$('[name="__about-01"').html('Lucia Ferrari, classe 1995, laureanda in Design della Comunicazione al Politecnico di Milano.');
 		$('[name="__about-02"').html('Una forte attitudine creativa, associata ad una grande passione per la musica, ha trovato il suo sbocco nella produzione digitale di brani di musica elettronica e sperimentale.');
-		$('[name="__about-03"').html('Da sempre ispirata dal mondo dei videogiochi e dell’animazione, spesso ne utilizzo il linguaggio come ispirazione per i miei lavori di graphic design.');
+		$('[name="__about-03"').html('Da sempre ispirata dal mondo dei videogiochi e dell’animazione, spesso ne utilizzo il linguaggio come ispirazione per i miei lavori di graphic e web design.');
 		$('[name="__about-04"').html('Mi affascina molto lo studio e l’utilizzo del segno grafico. Per questo la tipografia è un’altra mia passione, con particolare interesse sull’impatto di caratteri diversi in un progetto di comunicazione.');
 		$('[name="__about-05"').html('Trovo infine stimolante lo studio e l’utilizzo delle lingue straniere, specialmente quelle con sistemi di scrittura non alfabetici.');
 
@@ -61,7 +61,7 @@ var en = function(){
 	$('[name="__about-header"').html('<i class="fas fa-sm fa-user"></i> About');
 		$('[name="__about-01"').html('Lucia Ferrari, born 1995, graduate student in Communication Design at Politecnico di Milano.');
 		$('[name="__about-02"').html('A strong creative inclination, along with great passion for music, has found its outlet in digital production of electronic and experimental music tracks.');
-		$('[name="__about-03"').html('Having always been inspired by the world of videogames and animation, I often use their visual language as inspiration for my graphic design work.');
+		$('[name="__about-03"').html('Having always been inspired by the world of videogames and animation, I often use their visual language as inspiration for my graphic and web design work.');
 		$('[name="__about-04"').html('I am fascinated by the study and use of the graphic form. For this reason, typography is another passion of mine and I am very interested in the impact that different character sets have in a communication project.');
 		$('[name="__about-05"').html('Finally, I am keen on the study and use of foreign languages, especially if written in non-Latin scripts.');
 
