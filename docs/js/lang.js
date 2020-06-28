@@ -33,7 +33,7 @@ var it = function(){
 
 	$('[name="__contact-header"').html('<i class="fas fa-sm fa-address-book"></i> Contatti');
 
-	$('[name="__footer-gdpr').html("Autorizzo il trattamento dei miei dati personali presenti nel curriculum vitae ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679).");
+	$('[name="__footer-privacy').html("Autorizzo il trattamento dei miei dati personali presenti nel curriculum vitae ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679).");
 };
 
 var en = function(){
@@ -71,5 +71,5 @@ var en = function(){
 
 	$('[name="__contact-header"').html('<i class="fas fa-sm fa-address-book"></i> Contact');
 
-	$('[name="__footer-gdpr').html("I authorize the use of my personal data in the curriculum vitae pursuant to Italian Law Legislative Decree 30 June 2003, n. 196 and of the GDPR (EU Regulation 2016/679).");
+	$('[name="__footer-privacy').html("I authorize the use of my personal data in the curriculum vitae pursuant to Italian Law Legislative Decree 30 June 2003, n. 196 and of the GDPR (EU Regulation 2016/679).");
 };
