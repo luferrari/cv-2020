@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;900&family=Crimson+Text:wght@400i&display=swap');
 
 :root {
 	/* Bootstrap converted colors */
@@ -19,6 +19,7 @@
 
 	/* Personal variables */
 	--mono: 'Inconsolata', 'Courier New', 'Courier', monospace;
+	--serif: 'Crimson Text', 'Palatino', 'Times New Roman', 'Times', serif;
 	--black: 33, 37, 41;
 	--tone: 140, 140, 216;
 }
@@ -42,7 +43,7 @@ body {
 	background-color: rgb(var(--tone))!important;
 }
 
-.navbar {
+nav.navbar {
 	border-bottom: 2px solid rgb(var(--black));
 }
 
@@ -271,6 +272,17 @@ hr {
 	background: rgb(var(--tone));
 	color: rgb(var(--white));
 	text-decoration: none;
+}
+
+
+footer.navbar {
+	border-top: 2px solid rgb(var(--black));	
+}
+
+footer.navbar * {
+	color: rgb(var(--black));
+	font-family: var(--serif);
+	font-style: italic;
 }
 
 /* Debug */
