@@ -18,7 +18,7 @@
 	--light: 248, 249, 250;
 
 	/* Personal variables */
-	--mono: 'Inconsolata', 'Courier New', 'Courier', monospace;
+	--mono: 'Inconsolata', 'Menlo', 'Monaco', 'Courier New', 'Courier', monospace;
 	--serif: 'Crimson Text', 'Palatino', 'Times New Roman', 'Times', serif;
 	--black: 33, 37, 41;
 	--tone: 140, 140, 216;
