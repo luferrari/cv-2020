@@ -1,5 +1,5 @@
 var it = function(){
-	$('[name="__dl"').html('<a href="dl/cv-2020-it.pdf"><i class="fas fa-sm fa-download" aria-label="Download CV" title="Download CV"></i></a>');
+	$('[name="__dl"').html('<a href="dl/LuciaFerrari-CV2020-it.pdf"><i class="fas fa-sm fa-download" aria-label="Download CV" title="Download CV"></i></a>');
 
 	$('[name="__edu-header"').html('<i class="fas fa-sm fa-graduation-cap"></i> Istruzione');
 		$('[name="__edu-LM-small"]').html('dal 2018 ad oggi');
@@ -39,7 +39,7 @@ var it = function(){
 };
 
 var en = function(){
-	$('[name="__dl"').html('<a href="dl/cv-2020-en.pdf"><i class="fas fa-sm fa-download" aria-label="Download CV" title="Download CV"></i></a>');
+	$('[name="__dl"').html('<a href="dl/LuciaFerrari-CV2020-en.pdf"><i class="fas fa-sm fa-download" aria-label="Download CV" title="Download CV"></i></a>');
 
 	$('[name="__edu-header"').html('<i class="fas fa-sm fa-graduation-cap"></i> Education');
 		$('[name="__edu-LM-h3"]').html('<strong>Master’s Degree Course</strong> in <strong>Communication Design</strong> at <strong>Politecnico di Milano</strong>');
