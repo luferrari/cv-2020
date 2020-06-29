@@ -89,9 +89,46 @@ nav.navbar {
 	margin-left: 0.25rem;
 }
 
+
+
+._dl {
+	background: rgb(var(--white));
+	border: 2px solid rgb(var(--black));
+	border-radius: 0;
+	box-shadow: 0.25rem 0.25rem rgb(var(--black));
+	display: inline;
+	height: calc(2rem - 4px);
+	padding: 0.125rem;
+	position: fixed;
+	text-align: center;
+	vertical-align: middle;
+	width: calc(2rem - 4px);
+	z-index: 1050;
+}
+@media (max-width: 575px) {
+	._dl { top: calc(3rem + 3px); right: calc(1rem - 1px); box-shadow: 0 0 rgb(var(--black)); }
+}
+@media (min-width: 576px) {
+	._dl { top: calc(4.5rem + 4px); right: calc(1rem - 1px); }
+}
+
+._dl a {
+	color: rgb(var(--tone));
+	text-decoration: none;
+}
+._dl:hover {
+	background-color: rgb(var(--tone));
+}
+._dl:hover a {
+	color: rgb(var(--white));
+}
+
+
+
 .container.h-100 {
 	margin-top: 5rem;
 }
+
 
 hr {
 	border-top: 2px solid rgb(var(--black));
